@@ -7,4 +7,9 @@ public class hardchoices {
         else {Wrong="";}
         return Wrong;
     }
+    public boolean choices() {
+        boolean wrong;
+        wrong = !this.choice().equals("\"\\nYou suddenly realize you are in a ghost town. You don't remember anything, only know that you must fight and win whoever you encounter.\"");
+            return wrong;
+    }
 }
