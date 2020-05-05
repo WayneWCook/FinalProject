@@ -1,11 +1,11 @@
 public class hardchoices {
+    public boolean loop2;
     public String choice() {
-        Storytime y = new Storytime();
-        String Wrong;
-        String wrong = "\nYou suddenly realize you are in a ghost town. You don't remember anything, only know that you must fight and win whoever you encounter.";
-        if (!y.loop2) { Wrong = wrong; }
-        else {Wrong="";}
-        return Wrong;
+        String wrongg;
+        String wrong = "You suddenly realize you are in a ghost town. You don't remember anything, only know that you must fight and win whoever you encounter.";
+        if (!this.loop2) { wrongg = wrong; }
+        else {wrongg="";}
+        return wrongg;
     }
     public boolean choices() {
         boolean wrong;
