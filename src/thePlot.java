@@ -1,30 +1,30 @@
 /*thePlot.java
 Safwan Ahmad
-
  */
 public class thePlot {
     public int storyX;
     public String Story1() {
-            return "Your character rides in on a horse into an abandoned ghost town. You step into a building to check for supplies. " +
-                    "\nYou look in and around the abandoned saloon. You see a dark room.\n" +
-                    "Do you want to continue to the room(Y/N)?";}
-    public String Story2(){
-            return "You continue to the room. You hear a large rumbling surrounding the room. A large green light is going in the walls. " +
-                    "\nYou hear a loud voice coming from the walls. A green ball comes from the wall like an egg. \nIt hatches and there it stands a large half rotting corpse standing in front of you. \n" +
-                    "\"Hello there, now whats your name?\"\n" +
-                    "Choices:\n" +
-                    "A. I don’t have to answer that\n" +
-                    "B.Rude gesture\n" +
-                    "C.Your character name";}
-    public String Story3() {
-            return ", no matter what you do, you ain’t leaving this place alive. And when you get to hell tell ‘em Johnny Trainwreck sent you!”\n" +
-                    "Johnny Trainwreck’s first attack will be a train throw.\n" +
-                    "You will have to pick the correct answer from 3 letters as your choices.\n" +
-                    "A.Dodge the train and fire\n" +
-                    "B. Try to pass through the train and fire\n" +
-                    "C. Lay down and die";}
-        public String Stories() {
-            if (storyX == 4) return "\"ARGH, well you got lucky.See if you can handle this next attack.\"\n" +
+        return "Your character rides in on a horse into an abandoned ghost town. You step into a building to check for supplies. " +
+                "\nYou look in and around the abandoned saloon. You see a dark room.\n" +
+                "Do you want to continue to the room(Y/N)?";
+    }
+    public String Story2() {
+        return "You continue to the room. You hear a large rumbling surrounding the room. A large green light is going in the walls. " +
+                "\nYou hear a loud voice coming from the walls. A green ball comes from the wall like an egg. \nIt hatches and there it stands a large half rotting corpse standing in front of you. \n" +
+                "\"Hello there, now whats your name?\"\n" +
+                "Choices:\n" +
+                "A. I don’t have to answer that\n" +
+                "B.Rude gesture\n" +
+                "C.Your character name";
+    }
+    public String Stories() {
+        if (storyX == 3)  return "Well, no matter who you are, you ain’t leaving this place alive. And when you get to hell tell ‘em Johnny Trainwreck sent you!”\n" +
+                "Johnny Trainwreck’s first attack will be a train throw.\n" +
+                "You will have to pick the correct answer from 3 letters as your choices. Use only capitals.\n" +
+                "A. Dodge the train and fire\n" +
+                "B. Try to pass through the train and fire\n" +
+                "C. Lay down and die";
+        if (storyX == 4) return "\"ARGH, well you got lucky. See if you can handle this next attack.\"\n" +
                 "Next attack is a giant rail spike rain which follows you.\n" +
                 "A. Run and dodge the spikes which follow, you a futile task\n" +
                 "B. Take a spike while guarding most of your body, then fire\n" +
@@ -58,7 +58,7 @@ public class thePlot {
                 "The last thing you realize is that you will have to guess what you want to do, since you don't know what you will be doing anymore.\n" +
                 "1.@$#%^YTVCJFDRT\n" +
                 "A. Ymg''ll ah'mglw'nafh\n" +
-                "B.      Ymg''ll ah'mglw'nafh\n" +
+                "B. Ymg''ll ah'mglw'nafh\n" +
                 "C. Ymg''ll ah'mglw'nafh";
         if (storyX == 10) return "2.@#$%^&*(&^%$##&*&*\n" +
                 "A. Ahh ymg' ah mgephai geb\n" +
@@ -68,17 +68,16 @@ public class thePlot {
                 "A. Zhro ya\n" +
                 "B. Zhro ya\n" +
                 "C. Zhro ya";
-        else return "";
-    }
-       public String Story12() {
-            return "4.$%^&*(UIYUGTFR^$\n" +
-                    "A. Fahf ah weird nafl l' bug ah'legeth\n" +
-                    "B. Fahf ah weird nafl l' bug ah'legeth\n" +
-                    "C. Fahf ah weird nafl l' bug ah'legeth";}
-        public String StorySuccess(){
-            return "You don't feel anything. However, you her a voice talking to you:\n" +
+        if (storyX == 12) return "4.$%^&*(UIYUGTFR^$\n" +
+                "A. Fahf ah weird nafl l' bug ah'legeth\n" +
+                "B. Fahf ah weird nafl l' bug ah'legeth\n" +
+                "C. Fahf ah weird nafl l' bug ah'legeth";
+        if (storyX == 13) return "\"You see black everywhere, yet you somehow see the black being evaporate. Then nothing.\"\n" +
+                    "You don't feel anything. However, you her a voice talking to you:\n" +
                     "\"Hello. You died. I have existed forever. You will now think forever.\n" +
                     "I had put you in a loop, to attempt to kill me. I was that Thing, as you had called me.\n" +
                     "The loop was supposed to be impossible to complete, yet you completed it.\n" +
-                    "Congratulations. For your feat, I have ended the loop. I will allow you to experience death now.\"";}
+                    "Congratulations. For your feat, I have ended the loop. I will allow you to experience death now.\"";
+        else return "";
+    }
 }
