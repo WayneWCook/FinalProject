@@ -80,4 +80,18 @@ public class thePlot {
                     "Congratulations. For your feat, I have ended the loop. I will allow you to experience death now.\"";
         else return "";
     }
+        public String correct(){
+        String choice="other";
+        if (storyX==3) choice = "A";
+        else if (storyX == 4) choice = "B";
+        else if (storyX == 5) choice = "C";
+        else if (storyX == 6) choice = "B";
+        else if (storyX == 7) choice = "B";
+        else if (storyX == 8) choice = "A";
+        else if (storyX ==9) choice = "B";
+        else if (storyX ==10) choice = "A";
+        else if (storyX ==11) choice = "C";
+        else if (storyX ==12) choice = "C";
+        return choice;
+    }
 }
