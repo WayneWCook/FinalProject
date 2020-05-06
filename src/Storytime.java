@@ -1,6 +1,6 @@
 /*Storytime.java
 Alessandro Krapf, Luke Langius, and Safwan Ahmad
-5.5.2020
+5.6.2020
 java 160
 This program runs a game. If you get it correct you move on until you beat the game, and if you get it wrong it restarts.
 It uses classes hardchoices and thePlot.
@@ -25,15 +25,12 @@ public class Storytime {
                 else if (s.storyX > 2 && s.storyX < 13) {
                     choice = input.nextLine();
                     x.loop2 = choice.equals(s.correct());   //makes boolean true if the user input is correct.
-                    System.out.print(x.wrongchoice());   //if user input incorrect, displays text saying so.
-                    if (x.restart()) {
-                        loop = true;    //restarts program
-                        break;                       //restarts program
+                    System.out.print(x.incorrect());   //if user input incorrect, displays text saying so.
+                    if (x.incorrect().equals(x.wrongChoice)) {  //if text saying user was wrong is displayed, then the program will restart.
+                        loop = true;    //allows program to restart
+                        break;                       //exits for loop program
                     }
-                } else if (s.storyX == 13) {
-                    loop = false;         //if the script finishes, the program ends itself.
-                    break;
-                }
+                } else if (s.storyX == 13) loop = false;   //if the script finishes, the program ends itself.
             }
         } while (loop);
     }

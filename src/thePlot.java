@@ -8,7 +8,7 @@ It works for the main class.
 public class thePlot {
     public int storyX;
     public String name, politeVariable;
-    public String Polite() {
+    public String Polite() {    //If in Story part 2 the user decides to give name, then will display name in Part 3.
         String Polite;
         if (politeVariable.equals("C")) Polite = name;
         else Polite = "no matter who you are";
@@ -36,7 +36,7 @@ public class thePlot {
                 "A. Run and dodge the spikes which follow, you a futile task\n" +
                 "B. Take a spike while guarding most of your body, then fire\n" +
                 "C. Lay down and die";
-        else if (storyX == 5) return "\"That seems weirdly lucky, like something is helping you.\"" +
+        else if (storyX == 5) return "\"That seems weirdly lucky, like something is helping you.\"\n" +
                 "The final attack is a giant railway maze attack.\n" +
                 "A.Let the railway pierce you with everything\n" +
                 "B. Lay down and die\n" +
@@ -81,7 +81,7 @@ public class thePlot {
                 "C. Fahf ah weird nafl l' bug ah'legeth";
         else if (storyX == 13) return "\"You see black everywhere, yet you somehow see the black being evaporate. Then nothing.\"\n" +
                 "You don't feel anything. However, you her a voice talking to you:\n" +
-                "\"Hello. You died. I have existed forever. You will now think forever.\n" +
+                "\"Hello. You died. I have existed forever.\n" +
                 "I had put you in a loop, to attempt to kill me. I was that Thing, as you had called me.\n" +
                 "The loop was supposed to be impossible to complete, yet you completed it.\n" +
                 "Congratulations. For your feat, I have ended the loop. I will allow you to experience death now.\"";
