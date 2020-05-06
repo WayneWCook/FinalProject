@@ -21,7 +21,7 @@ public class Storytime {
                 System.out.println(s.Stories());    //displays story.
                 if (s.storyX ==1) { choice = input.nextLine();
                     if (!choice.equals("Y")) System.out.println("It does not matter.");}
-                else if (s.storyX ==2) s.politeVariable = input.nextLine();
+                else if (s.storyX ==2) s.politeVariable = input.nextLine();    //since the 1st, 2nd, and 13th parts of the Story have diff necessities.
                 else if (s.storyX > 2 && s.storyX < 13) {
                     choice = input.nextLine();
                     x.loop2 = choice.equals(s.correct());   //makes boolean true if the user input is correct.
@@ -35,5 +35,3 @@ public class Storytime {
         } while (loop);
     }
 }
-
-//DiD U GET THIS LUKE???

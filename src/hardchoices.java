@@ -14,5 +14,3 @@ public class hardchoices {
         return incorrect;
     }
 }
-
-//DiD U GET THIS LUKE???
