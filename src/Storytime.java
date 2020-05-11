@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Storytime {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        hardchoices x = new hardchoices();
+        hardchoices x = new hardchoices();                       //getting the stuff from the other classes
         thePlot s = new thePlot();
         int userChoice = 0;
         boolean loop  = false;
