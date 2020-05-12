@@ -12,7 +12,7 @@ public class Storytime {
         thePlot s = new thePlot();
         int userChoice = 0;
         int xy=13;   //xy is number of steps >2
-        boolean loop;
+        boolean loop; //loop start
         boolean tryCatch = false;
         System.out.println("What is your name?");
         s.name = input.nextLine();
@@ -80,6 +80,6 @@ public class Storytime {
                     }
                 } while (tryCatch);                  //end of try and catch
             }
-        } while (loop);
+        } while (loop); //end of loop
     }
 }
