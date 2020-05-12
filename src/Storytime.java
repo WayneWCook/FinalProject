@@ -11,13 +11,15 @@ public class Storytime {
         hardchoices x = new hardchoices();                       //getting the stuff from the other classes
         thePlot s = new thePlot();
         int userChoice = 0;
-        boolean loop  = false;
+        int xy=13;   //xy is number of steps >2
+        boolean loop;
         boolean tryCatch = false;
         System.out.println("What is your name?");
         s.name = input.nextLine();
         do{    //if the user loses, the program will restart from this point.
+            loop = false;
             lable1:           //The code uses "lable1" later to break out of a multiple loops at once
-            for (int a=1; a<=13; a++) {   //for loop runs all of the story.
+            for (int a=1; a<=xy; a++) {   //for loop runs all of the story.
                 s.storyX = a;   //decides which story to display by using the number of the for loop.
                 System.out.println(s.Stories());    //displays story.
                 do {
@@ -54,17 +56,18 @@ public class Storytime {
                 } while (tryCatch);                      //end of try and catch
                 do {
                     try {
-                        if (s.storyX > 2 && s.storyX < 13) {                  //doing the try catch for the rest of the story (parts 3 - 12)
+                        if (s.storyX > 2 && s.storyX < xy) {                  //doing the try catch for the rest of the story (parts 3 - 12)
                             userChoice = input.nextInt();
                             if (userChoice < 1 || userChoice > 3) {
                                 throw new ArithmeticException("Please type in a number 1 - 3: ");       //throws exception if the user don't enter a number in the right parameters, or the user enters anything besides a number
                             }
                             x.loop2 = userChoice == (s.correct());                                 //checking if the user entered the correct answer
+                            System.out.print(x.incorrect());
                             if (x.incorrect().equals(x.wrongChoice)) {
                                 loop = true;                               //if the user entered the incorrect answer, they would be reset back to the very beginning of the game.
                                 break lable1;               //since this if statement is inside of a do while loop and a for loop, I set a lable1 before the for loop so that if the user enters the incorrect answer it would break out of both of the loops and restart the game
-                            } else if (s.storyX == 13) {
-                                loop = false;                         //if the user got all of the correct answer it will break them out of the do while loop and allow them to win the game
+                            } else if (s.storyX == xy) {
+                                tryCatch=false; //if the user got all of the correct answer it will break them out of the do while loop and allow them to win the game
                                 break lable1;
                             }
                             tryCatch = false;
@@ -73,6 +76,7 @@ public class Storytime {
                         System.out.println("Please type in a number 1 - 3: ");         //catching the thrown exception
                         input.nextLine();
                         tryCatch = true;
+
                     }
                 } while (tryCatch);                  //end of try and catch
             }

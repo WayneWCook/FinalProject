@@ -76,8 +76,8 @@ public class thePlot {
                 "3. Ahh ymg' ah mgephai geb";
         else if (storyX == 11) return "3.$%^&UYGTFYR$^%&^&*(\n" +
                 "1. Zhro ya\n" +
-                "B. Zhro ya\n" +
-                "C. Zhro ya";
+                "2. Zhro ya\n" +
+                "3. Zhro ya";
         else if (storyX == 12) return "4.$%^&*(UIYUGTFR^$\n" +
                 "1. Fahf ah weird nafl l' bug ah'legeth\n" +
                 "2. Fahf ah weird nafl l' bug ah'legeth\n" +
